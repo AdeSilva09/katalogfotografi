@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Basic Photography PRO</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #02111b, #042a47, #010b11);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .name {
+        font-family: 'Anton', sans-serif;
+        font-size: 55px;
+        letter-spacing: 3px;
+        color: #8afcff;
+        text-shadow: 0 0 10px #1affff;
+    }
+
+    .title-big {
+        font-family: 'Anton', sans-serif;
+        font-size: 120px;
+        letter-spacing: 5px;
+        margin-top: -10px;
+    }
+
+    .subtitle-id {
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.8;
+    }
+
+    /* GRID 3 ATAS + 3 BAWAH */
+    .menu {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 80%;
+        max-width: 1100px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 35px 20px;
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255,255,255,0.12);
+        font-family: 'Anton', sans-serif;
+        font-size: 32px;
+        color: #a8fff4;
+        text-decoration: none;
+        text-shadow: 0 0 8px #6ff7ff;
+        transition: 0.25s ease;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .card:hover {
+        transform: translateY(-12px) scale(1.06);
+        box-shadow: 0 12px 30px rgba(0, 255, 255, 0.4);
+        border-color: #6ff7ff;
+    }
+
+    @media(max-width: 900px) {
+        .menu { grid-template-columns: repeat(2, 1fr); }
+        .title-big { font-size: 75px; }
+    }
+
+    @media(max-width: 600px) {
+        .menu { grid-template-columns: 1fr; }
+        .title-big { font-size: 55px; }
+        .name { font-size: 35px; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="name">ADE SILVA N.D</div>
+    <div class="title-big">BASIC</div>
+    <div class="title-big">PHOTOGRAPHY</div>
+    <div class="subtitle-id">20231030023 — SISTEM INFORMASI</div>
+
+    <div class="menu">
+        <a href="cahaya.html" class="card">CAHAYA</a>
+        <a href="speed.html" class="card">SPEED</a>
+        <a href="dof.html" class="card">DOF</a>
+        <a href="komposisi.html" class="card">KOMPOSISI</a>
+        <a href="revisi.html" class="card">REVISI</a>
+        <a href="uts.html" class="card">UTS</a>
+    </div>
+</div>
+
+</body>
+</html>

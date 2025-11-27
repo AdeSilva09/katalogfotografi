@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rim Light - Basic Photography</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(180deg, #00111f, #002b49, #00111f);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 50px;
+        align-items: start;
+    }
+
+    /* TITLE */
+    .title-box h3 {
+        font-family: 'Anton', sans-serif;
+        font-size: 25px;
+        margin: 0 0 20px;
+    }
+
+    /* IMAGE CARD */
+    .image-box {
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        border-radius: 18px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 0 20px rgba(0,255,200,0.15);
+        transition: 0.3s ease;
+    }
+
+    .image-box:hover {
+        box-shadow: 0 0 35px rgba(0,255,200,0.45);
+        transform: scale(1.02);
+    }
+
+    .image-box img {
+        width: 100%;
+        border-radius: 12px;
+        display: block;
+    }
+
+    /* INFO PANEL */
+    .info-panel {
+
+        padding: 30px;
+        border-radius: 18px;
+        backdrop-filter: blur(10px);
+
+        /* BUAT TULISAN TENGAH VERTIKAL */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .info-panel h2 {
+        font-family: 'Anton', sans-serif;
+        font-size: 55px;
+        margin: 0 0 20px;
+    }
+
+    .data p {
+        margin: 6px 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .data span {
+        color: #00ffbb;
+        font-weight: 600;
+    }
+
+    .desc-title {
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .desc-text {
+        margin-top: 8px;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    @media (max-width: 900px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        .info-panel {
+            height: auto;
+        }
+
+        .info-panel h2 {
+            font-size: 45px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left-section">
+        <div class="title-box">
+            <h3>TUGAS CAHAYA</h3>
+        </div>
+
+        <div class="image-box">
+            <img src="img/Atas (1).jpg" alt="Rim Light Photo">
+        </div>
+    </div>
+
+    <!-- INFO PANEL DI TENGAH -->
+    <div class="info-panel">
+        <h2>TOP LIGHT</h2>
+
+        <div class="data">
+            <p><span>KAMERA:</span> REDMI NOTE 13, XIAOMI</p>
+            <p><span>ISO:</span> 50</p>
+            <p><span>SPEED:</span> 1/237s</p>
+            <p><span>DIAFRAGMA:</span> f/1.7</p>
+            <p><span>TAHUN & WAKTU:</span> 2025-2-10</p>
+        </div>
+
+        <div class="desc-title">KETERANGAN</div>
+        <div class="desc-text">
+          Pencahayaan dari arah atas menghasilkan bayangan jelas di area bawah mata dan hidung, yang menunjukkan intensitas cahaya siang hari yang tinggi.
+    </div>
+    </div>
+</div>
+<div class="container">
+
+    <div class="left-section">
+
+
+        <div class="image-box">
+            <img src="img/Samping (1).jpg" alt="Rim Light Photo">
+        </div>
+    </div>
+
+    <!-- INFO PANEL DI TENGAH -->
+    <div class="info-panel">
+        <h2>SIDE LIGHT</h2>
+
+        <div class="data">
+            <p><span>KAMERA:</span> REDMI NOTE 13, XIAOMI</p>
+            <p><span>ISO:</span> 50</p>
+            <p><span>SPEED:</span> 1/555s</p>
+            <p><span>DIAFRAGMA:</span> f/1.7</p>
+            <p><span>TAHUN & WAKTU:</span> 2025-2-10</p>
+        </div>
+
+        <div class="desc-title">KETERANGAN</div>
+        <div class="desc-text">
+            Foto ini memperlihatkan objek yang diterangi dengan teknik pencahayaan side light, sehingga terlihat bentuk, detail, serta hubungan antara area terang dan gelap. Komposisi, sudut pengambilan gambar, dan intensitas cahaya berperan dalam membentuk karakter visual 
+        </div>
+    </div>
+
+</div>
+<div class="container">
+
+    <div class="left-section">
+
+
+        <div class="image-box">
+            <img src="img/Back light rim (1).jpg" alt="Rim Light Photo">
+        </div>
+    </div>
+
+    <!-- INFO PANEL DI TENGAH -->
+    <div class="info-panel">
+        <h2>RIM LIGHT</h2>
+
+        <div class="data">
+            <p><span>KAMERA:</span> REDMI NOTE 13, XIAOMI</p>
+            <p><span>ISO:</span> 50</p>
+            <p><span>SPEED:</span> 1/244s</p>
+            <p><span>DIAFRAGMA:</span> f/1.7</p>
+            <p><span>TAHUN & WAKTU:</span> 2025-2-10</p>
+        </div>
+
+        <div class="desc-title">KETERANGAN</div>
+        <div class="desc-text">
+            Teknik pencahayaan ini menggunakan rim light di mana cahaya ditempatkan di belakang atau di sisi belakang subjek, sehingga menghasilkan garis cahaya tipis di tepi tubuh atau objek. Efek ini membantu memisahkan subjek dari latar belakang dan menegaskan kontur bentuknya.
+        </div>
+    </div>
+
+</div>
+<div class="container">
+
+    <div class="left-section">
+
+
+        <div class="image-box">
+            <img src="img/Back light (1).jpg" alt="Rim Light Photo">
+        </div>
+    </div>
+
+    <!-- INFO PANEL DI TENGAH -->
+    <div class="info-panel">
+        <h2>SILUET</h2>
+
+        <div class="data">
+            <p><span>KAMERA:</span> REDMI NOTE 13, XIAOMI</p>
+            <p><span>ISO:</span> 50</p>
+            <p><span>SPEED:</span> 1/538s</p>
+            <p><span>DIAFRAGMA:</span> f/1.7</p>
+            <p><span>TAHUN & WAKTU:</span> 2025-28-10</p>
+        </div>
+
+        <div class="desc-title">KETERANGAN</div>
+        <div class="desc-text">
+            Foto ini menampilkan subjek sebagai bentuk gelap tanpa detail karena sumber cahaya berada di belakang subjek. Pencahayaan dari belakang ini membuat subjek tampak hanya sebagai kontur, sementara latar belakang terlihat lebih terang sehingga bentuk utama menjadi fokus visual.
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="left-section">
+
+
+        <div class="image-box">
+            <img src="img/Depan (1).jpg" alt="Rim Light Photo">
+        </div>
+    </div>
+
+    <!-- INFO PANEL DI TENGAH -->
+    <div class="info-panel">
+        <h2>FRONT LIGHT</h2>
+
+        <div class="data">
+            <p><span>KAMERA:</span> REDMI NOTE 13, XIAOMI</p>
+            <p><span>ISO:</span> 50</p>
+            <p><span>SPEED:</span> 1/1493s</p>
+            <p><span>DIAFRAGMA:</span> f/1.7</p>
+            <p><span>TAHUN & WAKTU:</span> 2025-2-10</p>
+        </div>
+
+        <div class="desc-title">KETERANGAN</div>
+        <div class="desc-text">
+           foto ini menggunakan teknik pencahayaan yang datang dari arah depan subjek. Teknik ini menghasilkan pencahayaan merata sehingga detail terlihat jelas dan bayangan menjadi minimal. Akibatnya, tekstur tampak halus dan wajah atau objek terlihat lebih terang dan datar.
+    </div>
+
+</div>
+</body>
+</html>
